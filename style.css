@@ -1428,7 +1428,6 @@ iframe {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.05);
     height: 80px;
     line-height: 80px;
     color: #fff;
@@ -1436,6 +1435,11 @@ iframe {
     align-items: center;
     animation: smoothScroll 0.5s forwards;
     z-index: 100;
+    background-color: #00112C;
+}
+
+.template-home .site-header {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .site-header.fixed {
@@ -1931,6 +1935,94 @@ iframe {
 
 /* End Home-about */
 /* **************************** End Home ************************* */
+/* ****************************  Term-ser ************************* */
+.title-page {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 68px;
+    text-align: center;
+    color: #00112C;
+}
+
+.term-ser {
+    padding: 140px 0 207px;
+    counter-reset: section;
+}
+
+.term__content {
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+.term__inner {
+    margin-top: 50px;
+}
+
+.term__content p,
+.term__inner ul li {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.term__inner ul li+li {
+    margin-top: 40px;
+}
+
+.term__content h2,
+.term__content h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.term__content h3 {
+    padding-left: 119px;
+    position: relative;
+    margin: 60px 0 20px;
+}
+
+.term__content h3:nth-of-type(1) {
+    margin-top: 40px;
+}
+
+.term__inner h3::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.term__inner ul {
+    counter-reset: section-ul;
+}
+
+.term__inner ul li::before {
+    counter-increment: section-ul;
+    content: counter(section) ". " counter(section-ul);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+/* .term__content h3::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+.term__inner li {
+    padding-left: 119px;
+    position: relative;
+}
+
+
+/* **************************** End Term-ser ************************* */
 
 /* =========================================================== */
 /* End Main */
