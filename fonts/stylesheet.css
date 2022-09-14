@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'YuGothic';
+    src: url('YuGothic-Regular.eot'); /* IE9 Compat Modes */
+    src: url('YuGothic-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('YuGothic-Regular.woff2') format('woff2'), /* Modern Browsers */
+        url('YuGothic-Regular.woff') format('woff'), /* Modern Browsers */
+        url('YuGothic-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('YuGothic-Regular.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YuGothic';
+    src: url('YuGothic-Medium.eot'); /* IE9 Compat Modes */
+    src: url('YuGothic-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('YuGothic-Medium.woff2') format('woff2'), /* Modern Browsers */
+        url('YuGothic-Medium.woff') format('woff'), /* Modern Browsers */
+        url('YuGothic-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('YuGothic-Medium.svg') format('svg'); /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YuGothic';
+    src: url('YuGothic-Light.eot'); /* IE9 Compat Modes */
+    src: url('YuGothic-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('YuGothic-Light.woff2') format('woff2'), /* Modern Browsers */
+        url('YuGothic-Light.woff') format('woff'), /* Modern Browsers */
+        url('YuGothic-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('YuGothic-Light.svg') format('svg'); /* Legacy iOS */
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YuGothic';
+    src: url('YuGothic-Bold.eot'); /* IE9 Compat Modes */
+    src: url('YuGothic-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('YuGothic-Bold.woff2') format('woff2'), /* Modern Browsers */
+        url('YuGothic-Bold.woff') format('woff'), /* Modern Browsers */
+        url('YuGothic-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('YuGothic-Bold.svg') format('svg'); /* Legacy iOS */
+    font-weight: bold;
+    font-style: normal;
+}
