@@ -1963,6 +1963,7 @@ iframe {
     font-size: 18px;
     line-height: 30px;
     font-weight: 500;
+    color: #333333;
 }
 
 .term__inner ul li+li {
@@ -1975,6 +1976,7 @@ iframe {
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
+    color: #333333;
 }
 
 .term__content h3 {
