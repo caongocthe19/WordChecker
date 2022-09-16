@@ -43,6 +43,20 @@
 			}
 		})
 
+		//Tab--main
+		$(".tab-control li:first-child").addClass("active");
+
+		var first_tab = $(".tab-control li:first-child a").attr("href");
+		$(first_tab).show();
+
+		$(".tab-control li a").click(function (event) {
+			event.preventDefault();
+			$(this).parents("ul").find("li").removeClass("active");
+			$(this).parent().addClass("active");
+			var id = $(this).attr("href");
+			$(".tab-content").hide();
+			$(id).show();
+		});
 
 	});
 })(jQuery);

@@ -1,0 +1,1077 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>2.0 Suggest Word – 1</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style-2.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- orther script -->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header" class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+            <div class="container">
+                <div class="site-brand">
+                    <h1 class="header-logo">
+                        <a href="index.html">
+                            <img src="images/assets/logo-header.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <nav class="main-menu" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <div class="mobile-menu">
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+                    </div>
+                    <div class="box-menu-mb">
+                        <ul>
+                            <li class="current-menu-item">
+                                <a href="index.html">SEO Tools</a>
+                                <ul class="menu-sub">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/menu-sub1.svg" alt="">
+                                            <h3>SEOキーワード分析ツール</h3>
+                                            <p>ワンクリックで最適なキーワードを設計
+                                                検索ユーザーの「検索意図」がいもづる式に手に取れる
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/menu-sub2.svg" alt="">
+                                            <h3>キーワード難易度分析ツール</h3>
+                                            <p>キーワードのSEO難易度やE-A-T度合い、トピッククラスターを解析します
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/menu-sub3.svg" alt="">
+                                            <h3>キーワードグルーピングツール</h3>
+                                            <p>大量のキーワードをグルーピング<br />
+                                                ノイズキーワードの自動除去や検索Volの取得も自動化
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Knowledge</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div><!-- .box-menu-mb-->
+                </nav><!-- .main-menu -->
+                <div class="right-header">
+                    <i class="icon-menu-nav"></i>
+                    <ul class="menu-sub-right">
+                        <li><a href="#"><span><i class="icon-evelop"></i></span>お問い合わせ</a></li>
+                        <li><a href="#"><span><i class="icon-question"></i></span>使い方・ヘルプ</a></li>
+                        <li><a href="#"><span><i class="icon-key"></i></span>パスコード発行</a></li>
+                    </ul>
+                </div>
+            </div><!-- .container -->
+        </header><!-- .site-header -->
+
+        <main id="main" class="site-main" role="main" itemscope itemprop="mainContentOfPage">
+            <section class="banner banner__tab">
+                <div class="banner__content">
+                    <div class="banner__search">
+                        <form action="">
+                            <div class="form-search">
+                                <input type="text" placeholder="キーワード" class="inp-seach">
+                                <input type="password" placeholder="パスワード" class="inp-password">
+                                <button><i class="icon-search"></i></button>
+                            </div><!-- .form-search-->
+                        </form>
+                    </div><!-- .banner__search-->
+                </div><!-- .banner__content-->
+            </section>
+            <div class="main__tab">
+                <div class="main__tab--content d-flex justify-content-between">
+                    <div class="tab--content-left">
+                        <img src="images/bg-bot-tab.png" alt="" class="tab-bot-img">
+                        <ul class="tab-control">
+                            <li><a href="#tab__suggets">サジェストワード</a></li>
+                            <li><a href="#tab__search-word">再検索するワード</a></li>
+                            <li><a href="#group-re-search">再検索の流れ</a></li>
+                            <li><a href="#table-ques-right">質問や知りたい事</a></li>
+                            <li><a href="#tab__search-hits">同時に検索ヒットするワード</a></li>
+                        </ul>
+                    </div><!-- .tab--content-left-->
+                    <div class="tab--content-right">
+                        <div class="tab__inner">
+                            <div class="tab__inner--top d-flex justify-content-between">
+                                <div class="tab--top--item d-flex justify-content-between align-items-center">
+                                    <span>検索Vol:</span>
+                                    <strong>135000</strong>
+                                </div><!-- .tab--top--item-->
+
+                                <div class="tab--top--item d-flex justify-content-between align-items-center">
+                                    <span>広告単価:</span>
+                                    <strong>￥749</strong>
+                                </div><!-- .tab--top--item-->
+
+                                <div class="tab--top--item d-flex justify-content-between align-items-center">
+                                    <span>競合性:</span>
+                                    <strong>63(中)</strong>
+                                </div><!-- .tab--top--item-->
+                            </div><!-- .tab__inner--top-->
+                            <div class="tab__inner--bot">
+                                <div class="tab__suggets tab-content" id="tab__suggets">
+                                    <div class="tab__gift-download d-flex justify-content-between">
+                                        <div class="tab__gift" style="background-image: url(images/bg-gift-r.png);">
+                                            <div class="tab__gift--text d-flex justify-content-between">
+                                                <p>キーワード数：<strong>725個</strong> / 合計検索Vol</p>
+                                                <span class="number">188430</span>
+                                            </div>
+                                            <div class="progress" style="height:10px">
+                                                <div class="progress-bar" style="width:30%;height:10px"></div>
+                                            </div>
+                                        </div><!-- .tab__gift-->
+                                        <div class="tab__download d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <i class="icon-down"></i> CSVダウンロード
+                                            </a>
+                                        </div><!-- .tab__download-->
+                                    </div><!-- .tab__gift-download-->
+                                    <div class="tab__utili d-flex justify-content-between">
+                                        <div class="tab_utili--item">
+                                            <a href="#">全てワードを表示</a>
+                                        </div><!-- .tab_utili--item-->
+                                        <div class="tab_utili--item">
+                                            <a href="#">似たワードを１つにまとめる</a>
+                                        </div><!-- .tab_utili--item-->
+                                        <div class="tab_utili--item">
+                                            <a href="#"><i class="icon-copy"></i>キーワードをコピーする</a>
+                                        </div><!-- .tab_utili--item-->
+                                    </div><!--  .tab__utili-->
+                                    <div class="suggets__content d-flex justify-content-between">
+                                        <div class="suggets__left">
+                                            <h3 class="suggets__left--title">キーワード</h3>
+                                            <ul class="suggets__left--content">
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="suggets__right">
+                                            <table>
+                                                <thead>
+                                                    <th>キーワード</th>
+                                                    <th>検索Vol</th>
+                                                    <th>検索数の増減</th>
+                                                    <th>広告単価</th>
+                                                    <th>競合性</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="in-right">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td>→</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥749</span>
+                                                        </td>
+                                                        <td>63(中)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FF5B70;">↓-33%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color:#FF5B70 ;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FFB35E;">0%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                    </tr>
+                                                    <tr class="in-right">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td>→</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥749</span>
+                                                        </td>
+                                                        <td>63(中)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FF5B70;">↓-33%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color: #FF5B70;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-up">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #3AF4CA;">↑126%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color:#3AF4CA;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FFB35E;">0%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                    </tr>
+                                                    <tr class="in-right">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td>→</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥749</span>
+                                                        </td>
+                                                        <td>63(中)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FF5B70;">↓-33%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color: #FF5B70;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-up">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #3AF4CA;">↑126%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color:#3AF4CA;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FFB35E;">0%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                    </tr>
+                                                    <tr class="in-right">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td>→</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥749</span>
+                                                        </td>
+                                                        <td>63(中)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FF5B70;">↓-33%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color: #FF5B70;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-up">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #3AF4CA;">↑126%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color:#3AF4CA;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>135000</td>
+                                                        <td style="color: #FFB35E;">0%</td>
+                                                        <td>
+                                                            <img src="images/line-indi.svg" alt=""><span>￥637</span>
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><!-- .suggets__content-->
+                                </div><!-- .tab__suggets-->
+                                <div class="tab__suggets search-word tab-content" id="tab__search-word">
+                                    <div class="tab__gift-download d-flex justify-content-between">
+                                        <div class="tab__gift" style="background-image: url(images/bg-gift-r.png);">
+                                            <div class="tab__gift--text d-flex justify-content-between">
+                                                <p>キーワード数：<strong>725個</strong> / 合計検索Vol</p>
+                                                <span class="number">188430</span>
+                                            </div>
+                                            <div class="progress" style="height:10px">
+                                                <div class="progress-bar" style="width:30%;height:10px"></div>
+                                            </div>
+                                        </div><!-- .tab__gift-->
+                                        <div class="tab__download d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <i class="icon-down"></i> CSVダウンロード
+                                            </a>
+                                        </div><!-- .tab__download-->
+                                    </div><!-- .tab__gift-download-->
+                                    <div class="suggets__content d-flex justify-content-between">
+                                        <div class="suggets__left">
+                                            <h3 class="suggets__left--title">キーワード</h3>
+                                            <ul class="suggets__left--content">
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="suggets__right">
+                                            <table>
+                                                <thead>
+                                                    <th>キーワード</th>
+                                                    <th>出現場所</th>
+                                                    <th>出現数</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td class="search__place">
+                                                            <span>再検索</span>
+                                                            <span>関連</span>
+                                                        </td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><!-- .suggets__content-->
+                                </div><!-- .tab__suggets-->
+                                <div class="tab__suggets search-hits tab-content" id="tab__search-hits">
+                                    <div class="tab__gift-download d-flex justify-content-between">
+                                        <div class="tab__gift" style="background-image: url(images/bg-gift-r.png);">
+                                            <div class="tab__gift--text d-flex justify-content-between">
+                                                <p>キーワード数：<strong>725個</strong> / 合計検索Vol</p>
+                                                <span class="number">188430</span>
+                                            </div>
+                                            <div class="progress" style="height:10px">
+                                                <div class="progress-bar" style="width:30%;height:10px"></div>
+                                            </div>
+                                        </div><!-- .tab__gift-->
+                                        <div class="tab__download d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <i class="icon-down"></i> CSVダウンロード
+                                            </a>
+                                        </div><!-- .tab__download-->
+                                    </div><!-- .tab__gift-download-->
+                                    <div class="suggets__content d-flex justify-content-between">
+                                        <div class="suggets__left">
+                                            <h3 class="suggets__left--title">キーワード</h3>
+                                            <ul class="suggets__left--content">
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                                <li>クレジットカード<span>724</span></li>
+                                                <li>おすすめ<span>698</span></li>
+                                                <li>visa<span>10</span></li>
+                                                <li>女性<span>09</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="suggets__right">
+                                            <table>
+                                                <thead>
+                                                    <th>キーワード</th>
+                                                    <th>検索Vol</th>
+                                                    <th>広告単価</th>
+                                                    <th>競合性</th>
+                                                    <th>同時ランク率</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="in-right">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥794
+                                                        </td>
+                                                        <td style="color: #FF5B70;">60%(中)</td>
+                                                        <td style="color: #FF5B70;">70(高)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>12100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                        <td style="color:#3AF4CA ;">90%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                        <td style="color: #FFB35E;">60%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FF5B70;">70(高)</td>
+                                                        <td style="color: #FF5B70;">60%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-up">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>12100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #3AF4CA;">70(高)</td>
+                                                        <td style="color:#3AF4CA;">62%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                        <td style="color: #FFB35E;">90%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FF5B70;">70(高)</td>
+                                                        <td style="color: #FF5B70;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-up">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>12100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #3AF4CA;">70(高)</td>
+                                                        <td style="color:#3AF4CA;">62%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                        <td style="color: #FFB35E;">90%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-down">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FF5B70;">70(高)</td>
+                                                        <td style="color: #FF5B70;">62(中)</td>
+                                                    </tr>
+                                                    <tr class="in-up">
+                                                        <td>クレジットカード おすすめ 初心者</td>
+                                                        <td>12100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #3AF4CA;">70(高)</td>
+                                                        <td style="color:#3AF4CA;">62%(中)</td>
+                                                    </tr>
+                                                    <tr class="in-stable">
+                                                        <td>クレジットカード おすすめ</td>
+                                                        <td>27100</td>
+                                                        <td>
+                                                            ￥587
+                                                        </td>
+                                                        <td style="color: #FFB35E;">63(中)</td>
+                                                        <td style="color: #FFB35E;">90%(中)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><!-- .suggets__content-->
+                                </div><!-- .tab__suggets-->
+                                <div class="tab__re-search tab-content" id="group-re-search">
+                                    <div class="group-re-search">
+                                        <h2 class="title-diagram">クレジットカード おすすめ</h2>
+                                        <div class="all-item-branch">
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>持ってるだけでお得なクレジットカード</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>ゴールド</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>女性</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>信頼度ランキング</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>田舎 おすすめ</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>楽天</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>還元率 ランキング</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>究極の1枚</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>メイン 最強</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>visa</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>学生</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>amazon</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>初心者</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                            <div class="item-branch">
+                                                <h3><span class="rtg"></span>最強の2枚</h3>
+                                                <div class="lst-branch">
+                                                    <p><span class="rtg"></span>あまり使わない おすすめ</p>
+                                                    <p><span class="rtg"></span>無料クレジットカード 最強</p>
+                                                    <p><span class="rtg"></span>還元率の鬼</p>
+                                                    <p><span class="rtg"></span>信頼度ランキング</p>
+                                                    <p><span class="rtg"></span>究極の1枚</p>
+                                                    <p><span class="rtg"></span>最強の2枚</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .group-re-search-->
+                                </div><!-- .tab__re-search-->
+                                <div class="tab__ques-right  tab-content" id="table-ques-right">
+                                    <div class="tab__gift-download d-flex justify-content-between">
+                                        <div class="tab__gift" style="background-image: url(images/bg-gift-r.png);">
+                                            <div class="tab__gift--text d-flex justify-content-between">
+                                                <p>キーワード数：<strong>725個</strong> / 合計検索Vol</p>
+                                                <span class="number">188430</span>
+                                            </div>
+                                            <div class="progress" style="height:10px">
+                                                <div class="progress-bar" style="width:30%;height:10px"></div>
+                                            </div>
+                                        </div><!-- .tab__gift-->
+                                        <div class="tab__download d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <i class="icon-down"></i> CSVダウンロード
+                                            </a>
+                                        </div><!-- .tab__download-->
+                                    </div><!-- .tab__gift-download-->
+                                    <div class="table-ques-right">
+                                        <div class="title-tbl">
+                                            <span>質問文</span>
+                                            <span>出現数</span>
+                                        </div>
+                                        <div class="list-tbl-ques">
+                                            <div class="item-ques">
+                                                <h4>電子マネーとクレジットカード どっちが得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>ペイペイと楽天カードどちらがお得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードは使わないとどうなる?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードの大手5社は?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>電子マネーとクレジットカード どっちが得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>ペイペイと楽天カードどちらがお得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードは使わないとどうなる?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードの大手5社は?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>電子マネーとクレジットカード どっちが得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>ペイペイと楽天カードどちらがお得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードは使わないとどうなる?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードの大手5社は?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>電子マネーとクレジットカード どっちが得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>ペイペイと楽天カードどちらがお得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードは使わないとどうなる?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードの大手5社は?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>電子マネーとクレジットカード どっちが得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>ペイペイと楽天カードどちらがお得?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードは使わないとどうなる?</h4>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="item-ques">
+                                                <h4>クレジットカードの大手5社は?</h4>
+                                                <span>5</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- .table-ques-right-->
+                                </div><!-- .tab__ques-right-->
+                            </div><!-- tab__inner--bot-->
+                        </div><!-- .tab__inner-->
+                    </div><!-- .tab--content-right-->
+                </div><!-- .main__tab--content-->
+            </div><!-- .main__tab-->
+        </main><!-- .site-main -->
+
+        <footer id="footer" class="site-footer">
+            <div class="container">
+                <div id="bottom" class="site-bottom">
+                    <div class="site-bt-content">
+                        <div class="bottom1">
+                            <a href="#" class="logo-footer">
+                                <img src="images/assets/logo-footer.png" alt="">
+                            </a>
+                        </div>
+                        <div class="bottom2">
+                            <aside class="widget widget_nav_menu">
+                                <h3 class="widget-title">企業</h3>
+                                <ul class="menu-ft">
+                                    <li>
+                                        <a href="#">説明文説明文</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文説明</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文説</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文説明文説明</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="widget widget_nav_menu">
+                                <h3 class="widget-title">企業</h3>
+                                <ul class="menu-ft">
+                                    <li>
+                                        <a href="#">説明文説明文</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文説明</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文説</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">説明文説明文説明</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="widget widget_anothemes_social_profile">
+                                <h3 class="widget-title">フォローする</h3>
+                                <ul class="socials-ft">
+                                    <li>
+                                        <a href="#"><img src="images/twitter.png" alt="Twitter">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/instagram.png" alt="Instagram">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/youtube.png" alt="youtube">YouTube</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div><!-- .site-bt-content-->
+                </div><!-- .site-bottom-->
+                <p class="copy-right">Copyright(c) 2022 getKeyword All Rights Reserved.</p>
+            </div><!-- .container -->
+        </footer><!-- site-footer -->
+    </div><!-- #wrapper -->
+</body>
+
+</html>
