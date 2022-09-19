@@ -1535,6 +1535,7 @@ iframe {
     font-weight: 400;
     text-align: center;
     margin-top: 14px;
+    font-family: 'Yu Gothic UI';
 }
 
 .main-menu .box-menu-mb ul li .menu-sub li:first-child {
@@ -1637,6 +1638,10 @@ iframe {
     color: #00112C;
     display: flex;
     align-items: center;
+}
+
+.menu-sub-right li a:hover {
+    color: #3AF4CA;
 }
 
 .menu-sub-right li a span {
@@ -1777,6 +1782,7 @@ iframe {
     line-height: 29px;
     margin: 15px 0 0;
     text-align: left;
+    font-family: 'Yu Gothic UI';
 }
 
 .fomr__passcode a {
@@ -1926,6 +1932,7 @@ iframe {
     line-height: 30px;
     margin-top: 20px;
     color: #333333;
+    font-family: 'Yu Gothic UI';
 }
 
 
@@ -2139,8 +2146,12 @@ iframe {
     line-height: 36px;
 }
 
+.tab__inner--bot {
+    margin-top: 20px;
+}
+
 .tab__gift-download {
-    margin: 20px 0;
+    margin: 0 0 20px;
 }
 
 .tab__download {
@@ -2328,6 +2339,10 @@ iframe {
 .suggets__right table th:nth-of-type(4) {
     width: 20.7260%;
     text-align: right;
+}
+
+.suggets__right table td:nth-of-type(4) img {
+    margin-right: 15px;
 }
 
 .suggets__right table td:nth-of-type(3),
