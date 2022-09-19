@@ -121,14 +121,14 @@
     background-color: #6BBCC5;
     text-align: center;
     margin-bottom: 5px;
-    position: relative;
+    position: relative; 
 }
 .lst-branch p:before{
     content: "";
     position: absolute;
     height: 1px;
     background-color: #707070;
-    left: -170px;
+    left: -100px;
     width: 44px;
     top: 50%;
     transform: translateY(-50%);
@@ -144,7 +144,7 @@
     top: 21px;
     width: 1px;
     background-color: #707070;
-    left: -171px;
+    left: -101px;
 }
 .group-re-search {
     display: flex;
@@ -172,5 +172,23 @@
     left: -18px;
 }
 .lst-branch p span{
-    left: -126px;
+    left: -56px;
+}
+/*cookie*/
+.cookie-overlay {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background: #fff;
+  z-index: 2051;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.close-cookies {
+    cursor: pointer;
+}
+.close-cookies{
+    width: 18px;
 }
