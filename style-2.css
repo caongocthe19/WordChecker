@@ -44,7 +44,7 @@
     font-weight: 700;
     color: #333;
     padding: 13px 34px;
-    background-color: #69B2F8;
+    background-color: #1E88E5;
     border-radius: 50px;
     width: 212px;
     text-align: center;
@@ -52,13 +52,13 @@
 }
 .group-re-search h2:before{
     content: "";
-    height: 1px;
-    width: 28px;
-    background-color: #707070;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -28px;
-    position: absolute;
+        height: 1px;
+        width: 28px;
+        background-color: #707070;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -28px;
+        position: absolute;
 }
 .item-branch h3{
     font-family: 'YuGothic';
@@ -68,7 +68,7 @@
     color: #333333;
     padding: 15px;
     width: 320px;
-    background-color: #D1E6FA;
+    background-color: #01CC9B;
     border-radius: 50px;
     text-align: center;
     position: relative;
@@ -118,7 +118,7 @@
     padding: 11px;
     width: 292px;
     border-radius: 50px;
-    background-color: #FFE9F4;
+    background-color: #6BBCC5;
     text-align: center;
     margin-bottom: 5px;
     position: relative; 
