@@ -1882,9 +1882,9 @@ iframe {
 }
 
 .h-about__img::before {
-    content: "";
+    /* content: "";
     background-image: url(images/h-about1-bef.jpg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .h-about__img .h-about1-bf {
@@ -1945,6 +1945,10 @@ iframe {
     line-height: 68px;
     text-align: center;
     color: #00112C;
+}
+
+.template-term-of-service header {
+    background-color: #00112C;
 }
 
 .term-ser {
