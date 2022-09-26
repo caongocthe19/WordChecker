@@ -1,16 +1,4 @@
 @font-face {
-    font-family: 'Yu Gothic UI';
-    src: url('YuGothicUI-Regular.eot');
-    src: url('YuGothicUI-Regular.eot?#iefix') format('embedded-opentype'),
-        url('YuGothicUI-Regular.woff2') format('woff2'),
-        url('YuGothicUI-Regular.woff') format('woff'),
-        url('YuGothicUI-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'YuGothic';
     src: url('YuGothic-Medium.eot');
     /* IE9 Compat Modes */
@@ -44,4 +32,13 @@
     /* Legacy iOS */
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('YuGothic-Regular.woff2') format('woff2'),
+        url('YuGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }

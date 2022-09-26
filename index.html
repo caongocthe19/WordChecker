@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html>  
 
 <head>
 	<meta charset="utf-8">
@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="style-2.css" />
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive-2.css" />
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
@@ -29,23 +30,24 @@
 				<div class="site-brand">
 					<h1 class="header-logo">
 						<a href="index.html">
-							<img src="images/assets/logo-header.png" alt="">
+							<img src="images/assets/logo.png" alt="">
 						</a>
 					</h1>
 				</div>
 				<nav class="main-menu" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 					<div class="mobile-menu">
-						<span class="span-1"></span>
-						<span class="span-2"></span>
-						<span class="span-3"></span>
+						<i class="icon-menu-nav"></i>
 					</div>
 					<div class="box-menu-mb">
-						<ul>
+						<ul class="menu-mb-top">
 							<li class="current-menu-item">
 								<a href="index.html">SEOツール</a>
 								<ul class="menu-sub">
+									<div class="icon-back icon-thin use-mb-990">
+										<i class="icon-arr-thin-l"></i>
+									</div>
 									<li>
-										<a href="#">
+										<a href="index.html">
 											<img src="images/menu-sub1.svg" alt="">
 											<h3>SEOキーワード分析ツール</h3>
 											<p>ワンクリックで最適なキーワードを設計
@@ -75,9 +77,14 @@
 							<li><a href="#">知識</a></li>
 							<li><a href="#">価格</a></li>
 						</ul>
+						<ul class="menu-sub-right use-mb-990">
+							<li><a href="#"><span><i class="icon-evelop"></i></span>お問い合わせ</a></li>
+							<li><a href="#"><span><i class="icon-question"></i></span>使い方・ヘルプ</a></li>
+							<li><a href="#"><span><i class="icon-key"></i></span>パスコード発行</a></li>
+						</ul>
 					</div><!-- .box-menu-mb-->
 				</nav><!-- .main-menu -->
-				<div class="right-header">
+				<div class="right-header use-pc">
 					<i class="icon-menu-nav"></i>
 					<ul class="menu-sub-right">
 						<li><a href="#"><span><i class="icon-evelop"></i></span>お問い合わせ</a></li>
@@ -89,31 +96,34 @@
 		</header><!-- .site-header -->
 
 		<main id="main" class="site-main" role="main" itemscope itemprop="mainContentOfPage">
-			<section class="banner banner-home" style="background-image: url('images/h-banner.png');">
-				<div class="banner__content">
-					<h1 class="banner-home__title">SEOキーワードツール</h1>
-					<p class="banner__desc">検索ボリュームから関連ワードまで簡単調査</p>
-					<div class="banner__search">
-						<form action="">
-							<div class="form-search">
-								<input type="text" placeholder="キーワード" class="inp-seach">
-								<input type="password" placeholder="パスワード" class="inp-password">
-								<button><i class="icon-search"></i></button>
-							</div><!-- .form-search-->
-							<p class="fomr__passcode">パスコードの発行は<a href="#">こちら</a>から</p>
-							<div class="search-recent">
-								<h2 class="search-recent__title">直近で検索されたワード</h2>
-								<ul class="search-recent__list">
-									<li><a href="#">オウンドメディア</a></li>
-									<li><a href="#">父 誕生日プレゼント</a></li>
-									<li><a href="#">分析 ツール</a></li>
-									<li><a href="#">再検索キーワード</a></li>
-									<li><a href="#">キーワード</a></li>
-								</ul>
-							</div>
-						</form>
-					</div><!-- .banner__search-->
-				</div><!-- .banner__content-->
+			<section class="banner banner-home">
+				<div class="container">
+					<div class="banner__content">
+						<h1 class="banner-home__title">SEOキーワードツール</h1>
+						<p class="banner__desc">検索ボリュームから関連ワードまで簡単調査</p>
+						<div class="banner__search">
+							<form action="">
+								<div class="form-search">
+									<input type="text" placeholder="キーワード" class="inp-seach">
+									<input type="password" placeholder="パスワード" class="inp-password" autocomplete="on">
+									<button><i class="icon-search"></i></button>
+								</div><!-- .form-search-->
+								<p class="fomr__passcode">パスコードの発行は<a href="#">こちら</a>から</p>
+								<div class="search-recent">
+									<h2 class="search-recent__title">直近で検索されたワード</h2>
+									<ul class="search-recent__list">
+										<li><a href="suggest-word.html">オウンドメディア</a></li>
+										<li><a href="suggest-word.html">父 誕生日プレゼント</a></li>
+										<li><a href="suggest-word.html">分析 ツール</a></li>
+										<li><a href="suggest-word.html">再検索キーワード</a></li>
+										<li><a href="suggest-word.html">キーワード</a></li>
+									</ul>
+								</div>
+							</form>
+						</div><!-- .banner__search-->
+					</div><!-- .banner__content-->
+				</div><!-- .container-->
+
 			</section>
 			<section class="h-about">
 				<div class="container">
@@ -153,14 +163,31 @@
 				</div><!-- .container-->
 			</section><!-- .h-about-->
 		</main><!-- .site-main -->
-
+		<div class="cookie-overlay d-none">
+			<span class="icon-Close close-cookies"></span>
+			<h3 class="cookie__title">利用規約の確認</h3>
+			<div class="cookie__inner">
+				<p class="cookie__desc">本サービスの利用は利用規約が適用されます。<br />
+					また、ボタンを押して本サービスを利用したことで規約に同意したとみなされます。
+				</p>
+				<div class="cookie__check">
+					<input type="checkbox" id="check-cl">
+					<label for="check-cl">今後このメッセージを表示しない</label>
+				</div>
+			</div><!-- .cookie__inner-->
+			<div class="cookie__btn d-flex justify-content-end">
+				<button class="btn cookies__close close-cookies">戻る</button>
+				<button class="btn btn-primary accept-cookies">承諾する</button>
+			</div>
+		</div><!-- .cookie-overlay-->
+		<div class="overlay-page d-none"></div>
 		<footer id="footer" class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 			<div class="container">
 				<div id="bottom" class="site-bottom">
 					<div class="site-bt-content">
 						<div class="bottom1">
 							<a href="#" class="logo-footer">
-								<img src="images/assets/logo-footer.png" alt="">
+								<img src="images/assets/logo.png" alt="">
 							</a>
 						</div>
 						<div class="bottom2">
@@ -180,7 +207,7 @@
 										<a href="#">説明文説</a>
 									</li>
 									<li>
-										<a href="#">説明文説明文説明</a>
+										<a href="terms-of-service.html">Terms of Service</a>
 									</li>
 								</ul>
 							</aside>
